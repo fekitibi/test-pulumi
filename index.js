@@ -6,7 +6,7 @@ let service = new cloud.Service("pulumi-node", {
             build: "./Simple-App",
             memory: 128,
             ports: [{ port: 80 }],
-            environment: {ADMIN_PW:process.env.ADMIN_PW}
+            environment: {ADMIN_PW:process.env.ADMIN_PW_SECRET}
         },
     },
     replicas: 1,
