@@ -23,6 +23,7 @@ jobs:
         with:
           command: up
           stack-name: dev
+          work-dir: ./Infrastructure
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           ADMIN_PW_SECRET: ${{ secrets.ADMIN_PW_SECRET }}
