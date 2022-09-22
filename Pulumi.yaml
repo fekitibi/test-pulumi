@@ -1,0 +1,6 @@
+name: pulumi-container
+description: A minimal JavaScript Pulumi program
+runtime:
+    name: nodejs
+    options:
+        typescript: false
