@@ -3,7 +3,7 @@ const cloud = require("@pulumi/cloud");
 let service = new cloud.Service("pulumi-node", {
     containers: {
         node: {
-            build: "./Simple-App",
+            build: "../Simple-App/",
             memory: 128,
             ports: [{ port: 80 }],
             environment: {ADMIN_PW:process.env.ADMIN_PW_SECRET}
