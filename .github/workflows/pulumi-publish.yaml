@@ -19,6 +19,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - run: npm install
       - uses: pulumi/actions@v3
+        id: pulumi
         with:
           command: up
           stack-name: dev
