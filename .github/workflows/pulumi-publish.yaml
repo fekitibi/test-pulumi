@@ -1,6 +1,9 @@
 name: pulumi-publish
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   update:
